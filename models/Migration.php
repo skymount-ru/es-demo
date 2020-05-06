@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "migration".
@@ -10,7 +11,7 @@ use Yii;
  * @property string $version
  * @property int|null $apply_time
  */
-class Migration extends \yii\db\ActiveRecord
+class Migration extends ActiveRecord
 {
     /**
      * {@inheritdoc}

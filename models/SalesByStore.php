@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "sales_by_store".
@@ -11,7 +12,7 @@ use Yii;
  * @property string|null $manager
  * @property float|null $total_sales
  */
-class SalesByStore extends \yii\db\ActiveRecord
+class SalesByStore extends ActiveRecord
 {
     /**
      * {@inheritdoc}

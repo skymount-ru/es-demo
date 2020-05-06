@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveQuery;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "film".
@@ -28,7 +30,7 @@ use Yii;
  * @property Category[] $categories
  * @property Inventory[] $inventories
  */
-class Film extends \yii\db\ActiveRecord
+class Film extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -80,7 +82,7 @@ class Film extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Language]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getLanguage()
     {
@@ -90,7 +92,7 @@ class Film extends \yii\db\ActiveRecord
     /**
      * Gets query for [[FilmActors]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getFilmActors()
     {
@@ -100,7 +102,7 @@ class Film extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Actors]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getActors()
     {
@@ -110,7 +112,7 @@ class Film extends \yii\db\ActiveRecord
     /**
      * Gets query for [[FilmCategories]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getFilmCategories()
     {
@@ -120,7 +122,7 @@ class Film extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Categories]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getCategories()
     {
@@ -130,7 +132,7 @@ class Film extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Inventories]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getInventories()
     {

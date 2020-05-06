@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveQuery;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "country".
@@ -13,7 +15,7 @@ use Yii;
  *
  * @property City[] $cities
  */
-class Country extends \yii\db\ActiveRecord
+class Country extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -50,7 +52,7 @@ class Country extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Cities]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getCities()
     {

@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveQuery;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "language".
@@ -13,7 +15,7 @@ use Yii;
  *
  * @property Film[] $films
  */
-class Language extends \yii\db\ActiveRecord
+class Language extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -50,7 +52,7 @@ class Language extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Films]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getFilms()
     {

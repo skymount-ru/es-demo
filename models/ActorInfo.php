@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "actor_info".
@@ -12,7 +13,7 @@ use Yii;
  * @property string|null $last_name
  * @property string|null $film_info
  */
-class ActorInfo extends \yii\db\ActiveRecord
+class ActorInfo extends ActiveRecord
 {
     /**
      * {@inheritdoc}

@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "sales_by_film_category".
@@ -10,7 +11,7 @@ use Yii;
  * @property string|null $category
  * @property float|null $total_sales
  */
-class SalesByFilmCategory extends \yii\db\ActiveRecord
+class SalesByFilmCategory extends ActiveRecord
 {
     /**
      * {@inheritdoc}

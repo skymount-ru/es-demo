@@ -113,3 +113,8 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.grid-bordered .grid-cell {
+    border-bottom: 1px solid lightgray;
+    margin: 5px 0;
+}

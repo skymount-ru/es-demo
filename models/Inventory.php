@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveQuery;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "inventory".
@@ -15,7 +17,7 @@ use Yii;
  * @property Film $film
  * @property Rental[] $rentals
  */
-class Inventory extends \yii\db\ActiveRecord
+class Inventory extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -55,7 +57,7 @@ class Inventory extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Film]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getFilm()
     {
@@ -65,7 +67,7 @@ class Inventory extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Rentals]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getRentals()
     {

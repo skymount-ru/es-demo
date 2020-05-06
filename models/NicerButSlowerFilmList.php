@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "nicer_but_slower_film_list".
@@ -16,7 +17,7 @@ use Yii;
  * @property string|null $rating
  * @property string|null $actors
  */
-class NicerButSlowerFilmList extends \yii\db\ActiveRecord
+class NicerButSlowerFilmList extends ActiveRecord
 {
     /**
      * {@inheritdoc}

@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "staff_list".
@@ -16,7 +17,7 @@ use Yii;
  * @property string|null $country
  * @property int|null $sid
  */
-class StaffList extends \yii\db\ActiveRecord
+class StaffList extends ActiveRecord
 {
     /**
      * {@inheritdoc}

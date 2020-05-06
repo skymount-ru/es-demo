@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveQuery;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "staff".
@@ -24,7 +26,7 @@ use Yii;
  * @property Address $address
  * @property Store $store
  */
-class Staff extends \yii\db\ActiveRecord
+class Staff extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -77,7 +79,7 @@ class Staff extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Payments]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getPayments()
     {
@@ -87,7 +89,7 @@ class Staff extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Rentals]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getRentals()
     {
@@ -97,7 +99,7 @@ class Staff extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Address]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getAddress()
     {
@@ -107,7 +109,7 @@ class Staff extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Store]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getStore()
     {

@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "customer_list".
@@ -17,7 +18,7 @@ use Yii;
  * @property string|null $notes
  * @property int|null $sid
  */
-class CustomerList extends \yii\db\ActiveRecord
+class CustomerList extends ActiveRecord
 {
     /**
      * {@inheritdoc}

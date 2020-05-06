@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveQuery;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "film_actor".
@@ -14,7 +16,7 @@ use Yii;
  * @property Actor $actor
  * @property Film $film
  */
-class FilmActor extends \yii\db\ActiveRecord
+class FilmActor extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -55,7 +57,7 @@ class FilmActor extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Actor]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getActor()
     {
@@ -65,7 +67,7 @@ class FilmActor extends \yii\db\ActiveRecord
     /**
      * Gets query for [[Film]].
      *
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getFilm()
     {
